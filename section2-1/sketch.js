@@ -1,7 +1,9 @@
 // テキスト「繰り返し」
 function setup() {
   createCanvas(100,100);
-  fill(0);
+  fill(180);
+  noStroke();
+
   let x = 0;
   while(x < 100){ // 四角を描く座標が描画範囲内であれば続ける
     rect(x, x, 20, 20);
