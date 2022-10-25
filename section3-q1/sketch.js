@@ -14,7 +14,7 @@ function draw(){
   // BLANK[1]
   if(count<50){size=100+(count+=0.01);}
     else{size=200-(count+=0.01);}
-    if(keyIsDown(" ".charCodeAt(0))){if(count<50){size=100+(count+=1);}
+    if(keyIsDown("A".charCodeAt(0))){if(count<50){size=100+(count+=1);}
     else{size=200-(count+=1);}
        
     
