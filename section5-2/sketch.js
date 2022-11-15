@@ -45,6 +45,6 @@ function star(cx, cy, r){
       vertex(x,y);
     }
     endShape(CLOSE);
-  }  
+  }
   
 
