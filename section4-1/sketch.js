@@ -43,15 +43,22 @@ function setup(){
   for(let i = 0; i < scores.length; i++){
     const dx = width / scores.length;
     const h = height * scores[i] / 100;
-    if(i=largest){fill(255,0,0);}
-    else if(i=smallest){fill(0,255,0);}
-    else{fill(125);}
+    if(scores[i]==largest){
+      fill(255,0,0);
+    }
+    else if(scores[i]==smallest){
+      fill(0,255,0);
+    }
+    else{
+      fill(125);
+    }
   }// BLANK[4] ヒント: 条件分岐を使って色を変更します
-  
+
     rect(i * dx + 2, height - h, dx - 4, h);
     fill(0);
     text(scores[i].toPrecision(3), i * dx, height - h);
-  }
+  
 
-  line(0,height-average*height/100,400,height-average*height/100);
+  line(0,height-(average*height/100),400,height-(average*height/100));
+}
   // BLANK[5] 平均点の線を引きます
